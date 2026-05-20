@@ -6,9 +6,10 @@ import java.sql.SQLException;
 
 public class ConnectionFactory {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/loja_db?useSSL=false&serverTimezone=America/Sao_Paulo";
-    private static final String USER = "loja";
-    private static final String PASSWORD = "loja";
+    // URL com parâmetros para garantir UTF-8
+    private static final String URL = "jdbc:mysql://localhost:3306/lsrWeb?useSSL=false&serverTimezone=America/Sao_Paulo&useUnicode=true&characterEncoding=UTF-8";
+    private static final String USER = "LSR";
+    private static final String PASSWORD = "LSR";
 
     private ConnectionFactory() {
     }

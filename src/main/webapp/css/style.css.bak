@@ -601,119 +601,121 @@ small{color: #8d97aa; font-size:.93rem;}
   color:#fff;
   font-size:14px;
   transform: rotate(-20deg);
-}
 
-/* =========================
-   Navbar — centralização e cores
-   ========================= */
+  /* =========================
+     Navbar — centralização e cores
+     ========================= */
 
-/* Garante fundo e sombra padrão da navbar */
-.modern-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  background: rgba(255,255,255,0.95);
-  box-shadow: 0 2px 16px rgba(35,33,51,0.07);
-}
-
-/* Container alinhado */
-.modern-navbar .container {
-  max-width: 1250px;
-  margin: 0 auto;
-  width: 93vw;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 0 12px;
-}
-
-/* Logo (à esquerda) */
-.modern-navbar .brand {
-  font-weight: 900;
-  font-size: 1.52rem;
-  letter-spacing: 1px;
-  color: #4254f3;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-/* Menu centralizado */
-.modern-navbar ul {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  align-items: center;
-}
-
-/* Links do menu */
-.modern-navbar ul li a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 8px 14px;
-  border-radius: 12px;
-  transition: all 0.18s ease;
-  display: inline-block;
-}
-
-/* Hover com gradiente */
-.modern-navbar ul li a:hover,
-.modern-navbar ul li a:focus {
-  background: linear-gradient(100deg, #4254f3 85%, #33c68a 100%);
-  color: #fff;
-}
-
-/* Área do usuário (direita) */
-.user-area {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-left: auto;
-}
-
-.user-greeting {
-  color: #333;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.user-greeting i { color: #4254f3; margin-right: 6px; }
-
-.btn-logout {
-  background: rgba(255,80,80,0.06);
-  border: 1px solid rgba(255,80,80,0.18);
-  color: #cc3b3b;
-  padding: 7px 12px;
-  border-radius: 8px;
-  font-size: 0.86rem;
-  text-decoration: none;
-}
-
-/* Responsividade: menu mobile colapsado */
-@media (max-width: 900px) {
-  .modern-navbar .container { flex-wrap: wrap; }
-  .modern-navbar ul {
-    display: none;
-    position: absolute;
-    top: 65px;
+  /* Garante fundo e sombra padrão da navbar */
+  .modern-navbar {
+    position: fixed;
+    top: 0;
     left: 0;
-    right: 0;
-    flex-direction: column;
-    background: #f6f8fb;
-    padding: 18px 0;
-    gap: 0;
-    z-index: 9998;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 16px rgba(35,33,51,0.07);
   }
-  .modern-navbar ul.active { display: flex; }
-  .modern-navbar ul li a { padding: 10px 20px; display: block; }
-  .user-area { order: 3; width: 100%; justify-content: flex-end; padding-top: 8px; }
+
+  /* Container alinhado */
+  .modern-navbar .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 93vw;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0 12px;
+  }
+
+  /* Logo (à esquerda) */
+  .modern-navbar .brand {
+    font-weight: 900;
+    font-size: 1.52rem;
+    letter-spacing: 1px;
+    color: #4254f3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  /* Menu centralizado */
+  .modern-navbar ul {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+  }
+
+  /* Links do menu */
+  .modern-navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border-radius: 12px;
+    transition: all 0.18s ease;
+    display: inline-block;
+  }
+
+  /* Hover com gradiente */
+  .modern-navbar ul li a:hover,
+  .modern-navbar ul li a:focus {
+    background: linear-gradient(100deg, #4254f3 85%, #33c68a 100%);
+    color: #fff;
+  }
+
+  /* Área do usuário (direita) */
+  .user-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+  }
+
+  .user-greeting {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .user-greeting i { color: #4254f3; margin-right: 6px; }
+
+  .btn-logout {
+    background: rgba(255,80,80,0.06);
+    border: 1px solid rgba(255,80,80,0.18);
+    color: #cc3b3b;
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 0.86rem;
+    text-decoration: none;
+  }
+
+  /* Responsividade: menu mobile colapsado */
+  @media (max-width: 900px) {
+    .modern-navbar .container { flex-wrap: wrap; }
+    .modern-navbar ul {
+      display: none;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: #f6f8fb;
+      padding: 18px 0;
+      gap: 0;
+      z-index: 9998;
+    }
+    .modern-navbar ul.active { display: flex; }
+    .modern-navbar ul li a { padding: 10px 20px; display: block; }
+    .user-area { order: 3; width: 100%; justify-content: flex-end; padding-top: 8px; }
+  }
+
+
 }
